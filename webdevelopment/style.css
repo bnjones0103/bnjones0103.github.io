@@ -1,0 +1,53 @@
+h1 {
+    color: #094e12;
+    font-size: 42px;
+    text-shadow: .05em .05em .1em lightslategray;
+    font-family: "Comic Sans", cursive;
+    text-align: center;
+}
+p {
+    color: #4f7051;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+}
+h3 {
+    color: black;
+    font-size: 24px;
+    font-family: Lucida, serif;
+    text-decoration: underline;
+}
+li {
+    color: #305f33;
+    font-size: 14px;
+    font-family: Verdana, sans-serif;
+}
+strong {
+    color: black;
+    font-size: 16px;
+}
+.employer {
+    color: black;
+    font-size: 16px;
+}
+.university {
+    color: black;
+    font-size: 16px;
+}
+.nav-menu {
+    list-style-type: none; /* Removes bullet points */
+    display: flex; /* Makes the list horizontal */
+    gap: 20px; /* Space between items */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+.nav-menu li a {
+    text-decoration: none; /* Removes underline */
+    color: black; /* Link color */
+    font-weight: bold;
+}
+.nav-menu li a:hover {
+    color: #094e12; /* Hover effect */
+}
+footer {
+    font-weight: bold;
+}
