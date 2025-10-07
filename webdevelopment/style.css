@@ -93,3 +93,21 @@ footer {
 .container .info a:hover {
     color: white;
 }
+.resume-link {
+    box-sizing: border-box;
+    display: flex;
+    width: 500px;
+    height: 100px;
+    background:#4f7051;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: Verdana, sans-serif;
+    text-shadow: .05em .05em .1em black;
+    color: white;
+    border-radius: 20px;
+}
