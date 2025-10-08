@@ -111,3 +111,38 @@ footer {
     color: white;
     border-radius: 20px;
 }
+.job {
+    list-style-type: none;
+}
+.school {
+    list-style-type: none;
+}
+.skill {
+    list-style-type: square;
+}
+.job > li {
+    margin-top: 1.5em;
+    transition: background-color 0.3s ease;
+}
+.job > li:hover {
+    background-color: #dddcdc;
+    border-radius: 4px;
+}
+.job strong {
+    display: inline-block;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+}
+.school strong {
+    display: inline-block;
+    margin-bottom: 0.25em;
+    font-weight: bold;
+}
+.school:hover {
+    background-color: #dddcdc;
+    border-radius: 4px;
+}
+.skill:hover {
+    background-color: #dddcdc;
+    border-radius: 4px;
+}
