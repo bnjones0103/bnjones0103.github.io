@@ -1,0 +1,74 @@
+header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 80px; /* Adjust spacing here */
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Adjust gap between menu items */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(0)
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(131, 129, 129);
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #094e12;
+}
+
+nav li {
+  position: relative;
+}
+
+/* Dropdown styling */
+nav ul > li ul {
+  position: absolute;
+  top: 100%;          /* Places dropdown below parent */
+  left: 50%;          /* Start at the horizontal center of parent */
+  transform: translateX(-50%); /* Center it perfectly under "Projects" */
+  display: none;
+  background: white;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-width: 150px;
+  z-index: 1000;
+}
+
+nav ul > li:hover > ul {
+  display: flex;
+}
+
+nav ul > li ul li {
+  padding: 8px 20px;
+  white-space: nowrap;
+}
+
+nav ul > li ul li:hover {
+  background-color: #f4f4f4;
+}
