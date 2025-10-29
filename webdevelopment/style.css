@@ -187,3 +187,21 @@ video {
             color: black; 
         } 
 }
+.phone {
+  display: flex;     /* stacks phone & email vertically */
+  align-items: center;         /* centers them horizontally */
+  gap: 8px;                    /* space between lines */
+}
+.phone img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.mail img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
