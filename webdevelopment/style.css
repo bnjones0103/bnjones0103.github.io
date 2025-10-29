@@ -168,6 +168,9 @@ video {
     border-radius: 10px;
     box-shadow: 0 4px 12px black;
 }
+@page {
+    margin: 1in;
+}
 @media print { 
     nav, 
     nav *, 
