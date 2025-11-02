@@ -205,3 +205,64 @@ video {
     width: 1.5rem;
     height: 1.5rem;
 }
+form {
+  max-width: 600px;       /* keeps form from stretching too wide */
+  margin: 0 auto;         /* center on the page */
+  padding: 20px;          /* space inside the form */
+  background-color: #f9f9f9; /* light background */
+  border-radius: 8px;     /* rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  font-family: Verdana, sans-serif;
+}
+form label {
+  display: block;         /* make label take full width */
+  margin-bottom: 5px;     
+  font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+  width: 100%;            /* full width */
+  padding: 10px;          
+  margin-bottom: 15px;    /* spacing between fields */
+  border: 1px solid #ccc; /* light gray border */
+  border-radius: 5px;     
+  font-size: 16px;
+  box-sizing: border-box; /* includes padding in width */
+}
+form p:last-of-type {
+    text-align: center;
+}
+form input[type="submit"] {
+  background-color: #094e12; /* blue button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #01010e; /* darker blue on hover */
+}
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form select,
+  form textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
