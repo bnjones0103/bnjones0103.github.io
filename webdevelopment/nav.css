@@ -72,3 +72,114 @@ nav ul > li ul li {
 nav ul > li ul li:hover {
   background-color: #f4f4f4;
 }
+/* Hamburger button (hidden on large screens) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: rgb(131, 129, 129);
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+}
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px 30px;
+  }
+
+  /* Show hamburger, hide nav links */
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none; /* hide links by default */
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    position: absolute;
+    top: 70px; /* below nav bar */
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  /* Show the menu when toggled */
+  nav ul.show {
+    display: flex;
+  }
+
+  /* Fix dropdown alignment on mobile */
+  nav ul > li ul {
+    position: static;
+    transform: none;
+    box-shadow: none;
+  }
+
+  nav ul > li:hover > ul {
+    display: none; /* disable hover dropdown for touch screens */
+  }
+
+  nav ul > li ul li {
+    padding: 8px 0;
+  }
+}
+
+/* Hide the checkbox */
+.menu-toggle-checkbox {
+  display: none;
+}
+
+/* Hamburger button styling */
+.menu-toggle-label {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: rgb(131, 129, 129);
+  position: absolute;
+  right: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px 30px;
+  }
+
+  .menu-toggle-label {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  nav ul {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    position: absolute;
+    top: 70px; /* below nav bar */
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  /* Show menu when checkbox is checked */
+  .menu-toggle-checkbox:checked + .menu-toggle-label + ul {
+    display: flex;
+  }
+
+  /* Fix dropdowns for mobile */
+  nav ul > li ul {
+    position: static;
+    transform: none;
+    box-shadow: none;
+  }
+
+  nav ul > li:hover > ul {
+    display: none; /* disable hover dropdown for touch */
+  }
+}

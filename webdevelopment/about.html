@@ -12,11 +12,14 @@
         <title>About</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>
         <header>
             <nav>
                 <img src="logo.png" alt="Your Site Logo">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
+                <label for="menu-toggle" class="menu-toggle-label">☰</label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -29,22 +32,28 @@
         <h1>About Me</h1>
         <!--This is a heading for the beginning of content. This is where all content will lie.
         -->
-        <div class="headshot-section">
-        <img src="headshot.png" alt="headshot" class="headshot">
-        </div>
-            <p>
+        <section class="about-grid">
+
+            <div class="headshot-section">
+                <img src="headshot.png" alt="headshot" class="headshot">
+            </div>
+            <div class="about-text">
+                <p>
                 I’m a detail-oriented and innovative professional with expertise in learning management systems, project management, 
                 instructional design, and organizational development. I thrive on creating effective, user-friendly solutions that 
                 blend technology with strategy to improve processes and learning experiences. Beyond my professional work, 
                 I’m a proud mom, a Master’s student in Learning Technologies and Design, and someone who values balance—whether 
                 that’s spending time on the golf course or teaching my son how to read.
-            </p>    
+                </p>    
 
-            <p>
+                <p>
                 My journey combines technical expertise, leadership, and a passion for learning—qualities 
                 that set me apart in today’s evolving workplace. Continue reading to learn how my education, 
                 experience, and skills can add value to your organization.
-            </p>
+                </p>
+            </div>
+        
+        </section>
         <h3 class="no-print">Experience</h3>
         <!--List out all experience here-->
             <ul class="job">
@@ -84,7 +93,10 @@
         <!--List all education here-->
             <ul class="school">
                 <li>
-                    <strong>Maryville University</strong><span class="university"> - BA in Organizational Development </span>
+                    <strong>University of Missouri - Columbia</strong><span class="university"> - MS in Learning Management Systems and Desing (2027)</span>
+                </li>
+                <li>
+                    <strong>Maryville University</strong><span class="university"> - BA in Organizational Development (2023)</span>
                     <ul>
                         <li>Summa Cum Laude</li>
                         <li>Member: National Honor Society of Leadership and Success, Phi Theta Kappa</li>
