@@ -156,3 +156,9 @@ nav ul > li ul li:hover {
         display: none;
     }
 }
+
+html {
+    scroll-padding-top: 120px; /* adjust depending on your nav height */
+    scroll-behavior: smooth;
+}
+
