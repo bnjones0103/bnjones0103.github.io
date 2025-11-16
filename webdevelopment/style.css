@@ -12,9 +12,11 @@ p {
 }
 h3 {
     color: black;
-    font-size: 24px;
+    font-size: 28px;
     font-family: Lucida, serif;
     text-decoration: underline;
+    background: rgb(170, 170, 170);
+    padding: 15px;
 }
 li {
     color: #305f33;
@@ -270,6 +272,50 @@ form input[type="submit"]:hover {
 .about-text p {
     color: black;
 }
+
+/*added 11/16*/
+
+.flyers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    background:#f9f9f9;
+    padding: 20px;
+}
+
+.flyers img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; /*no cropping image*/
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    background:#f9f9f9;
+    padding: 20px;
+}
+.cards img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; /*no cropping image*/
+}
+
+.badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    background:#f9f9f9;
+    padding: 20px;
+}
+
+.badges img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; /*no cropping image*/
+}
+
 @media (max-width: 480px) {
   form {
     padding: 15px;
@@ -306,5 +352,16 @@ form input[type="submit"]:hover {
     text-align: center;
     background-color: rgb(117, 155, 117);
     font-size: 3rem;
+  }
+  .flyers {
+    grid-template-columns: 1fr;
+  }
+  .flyers img {
+    height: auto;
+  }
+  p {
+    color: black;
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif;
   }
 }
