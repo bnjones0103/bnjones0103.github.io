@@ -178,6 +178,54 @@ video {
     border-radius: 10px;
     box-shadow: 0 4px 12px black;
 }
+
+/*table css*/
+
+caption {
+    color: black;
+    font-size: 32px;
+    font-family: Lucida, serif;
+    background: #4f7051;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+table {
+    background-color: #f9f9f9;
+    border-collapse: collapse;
+    width: max-content;
+    margin: 40px auto; /* top 0, left/right auto (center), bottom 40px */
+}
+
+/* Header styling */
+table thead th {
+    font-weight: bold;      /* makes header bold */
+    font-size: 28px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Body cells */
+tbody td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(odd) {
+    background-color: rgb(170, 170, 170);
+}
+/*end table css*/
+
 @page {
     margin: 1in;
 }
