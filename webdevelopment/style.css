@@ -47,15 +47,15 @@ footer {
 }
 .container {
     width: 90%;
-    height: 100%;
+    height: auto;
     max-width: 1000px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    /*align-items: center;
+    justify-content: center;*/
 }
 .container .info h1 {
-    font-size: 4rem;
+    font-size: clamp(2rem, 6vw, 4rem);
     margin-bottom: 2rem;
     color: white;
     text-shadow: .05em .1em .1em black;
@@ -66,17 +66,23 @@ footer {
     color: white;
     text-shadow: .05em .05em .1em black;
 }
-.container .info p {
+/*.container .info p {
     font-size: 1rem;
     color: white;
     max-width: 60%;
     text-shadow: .1em .05em .1em black;
+}*/
+.container .info p, .container .info blockquote {
+    font-size: 1rem;
+    color: white;
+    text-shadow: .1em .05em .1em black;
+    max-width: 100%;
 }
-.container .info blockquote {
+/*.container .info blockquote {
     font-size: 1rem;
     max-width: 50%;
     text-shadow: .05em .05em .1em black;
-}
+}*/
 .container .info a:hover {
     color: white;
 }
@@ -412,4 +418,17 @@ form input[type="submit"]:hover {
     font-size: 1.2rem;
     font-family:'Times New Roman', Times, serif;
   }
+}
+@media (min-width: 768px) { /*mobile index page*/
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .info p {
+        max-width: 60%;
+    }
+    .container .info blockquote {
+        max-width: 50%;
+    }
 }
