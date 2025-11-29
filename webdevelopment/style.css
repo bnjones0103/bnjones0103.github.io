@@ -370,6 +370,28 @@ form input[type="submit"]:hover {
     object-fit: contain; /*no cropping image*/
 }
 
+/*footer edits 11/29*/
+footer img {
+  width: 24px;               /* Adjust size if needed */
+  height: 24px;
+  vertical-align: middle;    /* aligns with text */
+  margin-right: 8px;         /* space between icon and text */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.2);      /* slightly grows */
+  filter: drop-shadow(0 0 6px #1bae53); /* adds glow */
+  cursor: pointer;            /* indicates it's clickable */
+}
+
+/* Optional: smooth effect on the whole div when hovered */
+.phone:hover img,
+.mail:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #1bae53);
+}
+
 @media (max-width: 480px) {
   form {
     padding: 15px;
