@@ -20,15 +20,30 @@
                 <img src="logo.png" alt="Your Site Logo">
                 <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" />
                 <label for="menu-toggle" class="menu-toggle-label">☰</label>
-                <ul>
+                <ul class="main-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+
+                    <!--old project dropdown
                     <li><a href="project.html">Projects</a></li>
                     <ul>
                             <li>Flyers</li>
                             <li>Cards</li>
                             <li>Badges</li>
+                        </ul>-->
+                    <!-- Projects Dropdown -->
+                    <li class="projects-dropdown">
+                    <!-- Mobile submenu toggle -->
+                    <input type="checkbox" id="projects-toggle" class="submenu-toggle-checkbox">
+                    <label for="projects-toggle">Projects ▾</label>
+
+                        <ul class="submenu">
+                            <li><a href="#flyers">Flyers</a></li>
+                            <li><a href="#cards">Cards</a></li>
+                            <li><a href="#badges">Badges</a></li>
                         </ul>
+                    </li>
+                    
                     <li><a href="reflection.html">Reflection</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -166,7 +181,13 @@
             <a href="../webcontent/Jones-Resume.pdf" class="resume-link">Download My Resume</a>
         <footer>
             Brittani Jones<br>
-            November 19th, 2025
+            <div class="phone"> 
+                <img src="icon-phone.png" alt="Phone Icon">(636)358-7334<br> 
+            </div>
+            <div class="mail">    
+                <img src="icon-mail.png" alt="Mail Icon">bhorner0805@yahoo.com<br> 
+            </div> 
+            November 29, 2025
             <!--
             This is my footer to contain my name and current date. Will exist on every page.
             -->

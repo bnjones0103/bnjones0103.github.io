@@ -1,7 +1,7 @@
 /* ================================
    BASE NAVIGATION
 ==================================*/
-
+/*old style*/
 header {
     width: 100%;
     box-sizing: border-box;
@@ -30,7 +30,7 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(0); /* You can use -50% if you want perfect centering 
-}*/
+}
 
 /*NAV UL new*/
 nav ul {
@@ -40,7 +40,8 @@ nav ul {
     margin: 0;
     padding: 0;
     position: relative;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 nav li {
@@ -59,11 +60,20 @@ nav li a:hover {
     color: #094e12;
 }
 
+nav label {
+  color: rgb(131, 129, 129);
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
 /* ================================
    DESKTOP DROPDOWN
 ==================================*/
 
 /* The submenu */
+/*old style*/
 nav ul > li ul {
     position: absolute;
     top: 100%;
@@ -79,7 +89,7 @@ nav ul > li ul {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     min-width: 150px;
     z-index: 1000;
-}*/
+}
 
 /* Hover shows dropdown */
 nav ul > li:hover > ul {
@@ -94,6 +104,11 @@ nav ul > li ul li {
 
 nav ul > li ul li:hover {
     background-color: #f4f4f4;
+}
+
+/* Hide submenu toggle checkbox on desktop */
+.submenu-toggle-checkbox {
+    display: none;
 }
 
 /* ================================
@@ -168,10 +183,29 @@ nav ul > li ul li:hover {
     nav ul > li:hover > ul {
         display: none;
     }
+    .submenu-toggle-checkbox {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    /* Style the label so it still looks normal on mobile */
+    .projects-dropdown > label {
+        cursor: pointer;
+        display: block;
+        padding: 10px 0;
+    }
 }
 
 html {
     scroll-padding-top: 120px; /* adjust depending on your nav height */
     scroll-behavior: smooth;
 }
+    
+
+
+
 

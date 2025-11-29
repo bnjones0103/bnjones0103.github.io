@@ -24,13 +24,19 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="project.html">Projects</a>
-                        <ul>
-                            <li>Flyers</li>
-                            <li>Cards</li>
-                            <li>Badges</li>
+                    
+                    <!-- Projects Dropdown -->
+                    <li class="projects-dropdown">
+                    <!-- Mobile submenu toggle -->
+                    <input type="checkbox" id="projects-toggle" class="submenu-toggle-checkbox">
+                    <label for="projects-toggle">Projects ▾</label>
+
+                        <ul class="submenu">
+                            <li><a href="#flyers">Flyers</a></li>
+                            <li><a href="#cards">Cards</a></li>
+                            <li><a href="#badges">Badges</a></li>
                         </ul>
-                    </li>    
+                    </li>
                     <li><a href="reflection.html">Reflection</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -70,7 +76,13 @@
         </div>
         <footer>
             Brittani Jones<br>
-            October 15, 2025
+            <div class="phone"> 
+                <img src="icon-phone.png" alt="Phone Icon">(636)358-7334<br> 
+            </div>
+            <div class="mail">    
+                <img src="icon-mail.png" alt="Mail Icon">bhorner0805@yahoo.com<br> 
+            </div> 
+            November 29, 2025
             <!--
             This is my footer to contain my name and current date. Should exist on every page.
             -->
