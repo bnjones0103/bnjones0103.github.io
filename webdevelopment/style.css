@@ -93,12 +93,17 @@ footer {
     max-width: 60%;
     text-shadow: .1em .05em .1em black;
 }*/
-.container .info p, .container .info blockquote {
+.container .info p, .container .info blockquote,
+.container .info a {
     /*font-size: 1rem;*/
     font-size: clamp(0.9rem,3vw,1.2rem);
     color: white;
-    text-shadow: .1em .05em .1em black;
+    text-shadow: .05em .05em .05em black;
     max-width: 100%;
+    margin-left: auto;
+    text-align: right;
+    max-width: 50%;
+    display: block;
 }
 /*.container .info blockquote {
     font-size: 1rem;
