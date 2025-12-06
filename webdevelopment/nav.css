@@ -164,6 +164,9 @@ nav ul > li ul li:hover {
     .menu-toggle-checkbox:checked + .menu-toggle-label + ul {
         display: flex;
     }
+    .submenu-toggle-checkbox:checked + label + ul {
+        display: flex;
+    }
 
     /* Mobile dropdown behavior */
     nav ul > li ul {
