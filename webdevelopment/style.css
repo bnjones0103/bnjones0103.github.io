@@ -472,10 +472,12 @@ footer img:hover {
   /*mobile index page information*/
   .container .info p {
         font-size: 1.3rem;   /* increase size for mobile */
+        text-shadow: .05em .05em .1em black;
     }
 
     .container .info blockquote {
         font-size: 1.3rem;
+        text-shadow: .05em .05em .1em black;
     }
 
     .container .info a {
