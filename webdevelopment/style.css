@@ -481,6 +481,13 @@ footer img:hover {
     .container .info a {
         font-size: 1.2rem;
     }
+    .container,
+    .container .info {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px; /* or less */
+        box-sizing: border-box;
+    }
 
     /*.container .info {
         padding: 20px;
