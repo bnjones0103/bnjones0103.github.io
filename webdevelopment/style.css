@@ -488,6 +488,12 @@ footer img:hover {
         padding: 20px; /* or less */
         box-sizing: border-box;
     }
+    .container .info p,
+    .container .info blockquote,
+    .container .info a {
+        max-width: 100% !important;
+        text-align: left; /* optional but looks correct on mobile */
+    }
 
     /*.container .info {
         padding: 20px;
