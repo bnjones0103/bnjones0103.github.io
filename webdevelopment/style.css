@@ -471,15 +471,15 @@ footer img:hover {
   }
   /*mobile index page information*/
   .container .info p {
-        font-size: 1rem;   /* increase size for mobile */
+        font-size: 1.3rem;   /* increase size for mobile */
     }
 
     .container .info blockquote {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .container .info a {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .container,
     .container .info {
