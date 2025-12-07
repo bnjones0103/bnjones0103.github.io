@@ -471,7 +471,7 @@ footer img:hover {
   }
   /*mobile index page information*/
   .container .info p {
-        font-size: 1.3rem;   /* increase size for mobile */
+        font-size: 1.2rem;   /* increase size for mobile */
     }
 
     .container .info blockquote {
@@ -479,12 +479,12 @@ footer img:hover {
     }
 
     .container .info a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
-    .container .info {
+    /*.container .info {
         padding: 20px;
-    }
+    }*/
 }
 @media (min-width: 768px) { /*mobile index page*/
     .container {
