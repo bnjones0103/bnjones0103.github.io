@@ -111,7 +111,7 @@ footer {
     text-shadow: .05em .05em .1em black;
 }*/
 .container .info a:hover {
-    color: white;
+    color: black;
 }
 .resume-link {
     box-sizing: border-box;
@@ -469,6 +469,22 @@ footer img:hover {
     font-size: 1.2rem;
     font-family:'Times New Roman', Times, serif;
   }
+  /*mobile index page information*/
+  .container .info p {
+        font-size: 1.3rem;   /* increase size for mobile */
+    }
+
+    .container .info blockquote {
+        font-size: 1.3rem;
+    }
+
+    .container .info a {
+        font-size: 1.3rem;
+    }
+
+    .container .info {
+        padding: 20px;
+    }
 }
 @media (min-width: 768px) { /*mobile index page*/
     .container {
