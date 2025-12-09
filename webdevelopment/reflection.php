@@ -1,0 +1,65 @@
+<!Doctype HTML>
+<html lang="en">
+    <!--
+    Name: Brittani Jones
+    Date: September 11, 2025
+    Page: Boilerplate
+    Description: Starter template
+    -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,inital-scale=1.0">
+        <title>Reflection</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+        <!-- I will link to external CSS for styling of pages-->
+         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!--custom font link-->
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <?php
+         require_once("header.php");
+         ?>
+        <h1>Reflection</h1>
+        <!--This is a sample heading for the beginning of content. This is where all content will lie.
+        -->
+        <div class="reflection">
+            <p>
+                Throughout my career, I have been deeply committed to the intersection of learning, technology, 
+                and organizational growth. My professional journey in learning management systems administration, 
+                instructional design, and project management has given me the opportunity to build training solutions 
+                that are not only functional but also engaging and sustainable. Each role I have taken on has strengthened 
+                my belief that effective learning experiences can transform both individuals and organizations, bridging 
+                the gap between potential and performance.
+            </p>
+            <p>
+                My philosophy centers on the idea that learning should be accessible, adaptable, and impactful. Whether 
+                designing training materials, managing technology platforms, or facilitating professional development, 
+                I approach each project with the mindset that learners bring unique experiences and perspectives to the table. 
+                I strive to create environments that respect these differences while providing clear pathways for skill development 
+                and growth. Technology plays a vital role in this process, but it must always serve people—not the other way around.
+            </p>
+            <p>
+                As a learning professional, I see myself as both a facilitator and a partner. I believe education is most powerful 
+                when it is collaborative, practical, and directly applicable to real-world contexts. My teaching and training approach 
+                emphasizes problem-solving, critical thinking, and the ability to transfer knowledge into practice. This means designing 
+                experiences that are interactive, reflective, and adaptable, ensuring learners feel both supported and challenged.
+            </p>
+            <p>
+                Looking ahead, my career goals include continuing to develop innovative solutions at the intersection of learning 
+                and technology. I aim to contribute to organizations that value growth, equity, and adaptability, while also exploring 
+                opportunities to expand my expertise through advanced study and research in learning technologies. Ultimately, my 
+                mission is to create learning experiences that empower individuals, strengthen organizations, and drive positive change.
+            </p>
+        </div>
+        <?php
+         require_once("footer.php");
+         ?>
+    </body>
+</html>
+<!--
+This will close the code and complete the page
+-->

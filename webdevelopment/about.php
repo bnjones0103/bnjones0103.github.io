@@ -1,0 +1,170 @@
+<?php
+
+?>
+
+
+<!Doctype HTML>
+<html lang="en">
+    <!--
+    Name: Brittani Jones
+    Date: September 11, 2025
+    Page: Boilerplate
+    Description: Starter template
+    -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,inital-scale=1.0">
+        <title>About</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!--custom font link-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <?php
+         require_once("header.php");
+         ?>
+        <!-- Custom font used here -->
+        <h1>About Me</h1>   
+        <!--This is a heading for the beginning of content. This is where all content will lie.
+        -->
+        <section class="about-grid">
+
+            <div class="headshot-section">
+                <img src="headshot.png" alt="headshot" class="headshot">
+            </div>
+            <div class="about-text">
+                <p>
+                I’m a detail-oriented and innovative professional with expertise in learning management systems, project management, 
+                instructional design, and organizational development. I thrive on creating effective, user-friendly solutions that 
+                blend technology with strategy to improve processes and learning experiences. Beyond my professional work, 
+                I’m a proud mom, a Master’s student in Learning Technologies and Design, and someone who values balance—whether 
+                that’s spending time on the golf course or teaching my son how to read.
+                </p>    
+
+                <p>
+                My journey combines technical expertise, leadership, and a passion for learning—qualities 
+                that set me apart in today’s evolving workplace. Continue reading to learn how my education, 
+                experience, and skills can add value to your organization.
+                </p>
+            </div>
+        
+        </section>
+        <!-- Custom font used here -->
+        <h3 class="no-print">Experience</h3>
+        <!--List out all experience here-->
+            <ul class="job">
+                <li>
+                    <strong>LMS & Training Administrator</strong><span class="employer"> - Mazzella Companies (2024 - Present)</span>
+                    <ul>
+                        <li>Implement and optimize Schoox LMS for 1,000+ employees.</li>
+                        <li>Troubleshoot issues, track engagement metrics, and manage training requests.</li>
+                        <li>Develop new learning content and enhance user adoption.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Training Specialist</strong><span class="employer"> - Sunset Transportation (2023 - 2024)</span>
+                    <ul>
+                        <li>Delivered training for new hires across the U.S. and Mexico.</li>
+                        <li>Designed instructional materials and assessments.</li>
+                        <li>Led LMS setup, implementation and transition efforts.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Operations Support Specialist</strong><span class="employer">- Citi (2021 - 2023)</span>
+                    <ul>
+                        <li>Ensured compliance in loan processing and managed MS Access databases.</li>
+                        <li>Trained staff on new procedures to improve efficiency.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>General Manager</strong><span class="employer"> - Raising Cane's (2013 - 2021)</span>
+                    <ul>
+                        <li>Managed teams, operations, and training in fast-paced environments.</li>
+                        <li>Increased sales, optimized hiring and onboarding processes, and led performance 
+                            improvements.</li>
+                    </ul>
+                </li>
+            </ul>
+        <h3>Education</h3>
+        <!-- Custom font used here -->
+        <!--List all education here-->
+            <ul class="school">
+                <li>
+                    <strong>University of Missouri - Columbia</strong><span class="university"> - MS in Learning Management Systems and Desing (2027)</span>
+                </li>
+                <li>
+                    <strong>Maryville University</strong><span class="university"> - BA in Organizational Development (2023)</span>
+                    <ul>
+                        <li>Summa Cum Laude</li>
+                        <li>Member: National Honor Society of Leadership and Success, Phi Theta Kappa</li>
+                    </ul>
+                </li>
+            </ul>
+        <!--block these out to add table instead
+            <h3 class="no-print">Skills</h3>
+        List all skills here but divide based on what category they belong to
+            <ul class="skill">
+                <li><strong>LMS Administration:</strong> Schoox</li>
+                <li><strong>Instructional Design:</strong> Canva, Articulate Rise, Storyline</li>
+                <li><strong>Technology and Data:</strong> Python, R, Jupyter Notebook</li>
+                <li><strong>HR and ATS:</strong> Workday, iCIMS</li>
+                <li><strong>Certifications:</strong> ServSafe, CAPM</li>
+            </ul>
+        -->    
+        <!--table adding here 11/19-->
+        <div class="table-container">
+        <table>
+            <caption>Skills</caption>
+            <thead>
+                <tr>
+                <th scope="col">LMS Administration</th>
+                <th scope="col">Instructional Design</th>
+                <th scope="col">Technology and Data</th>
+                <th scope="col">HR and ATS</th>
+                <th scope="col">Certifications</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td>Schoox</td>
+                <td>Canva</td>
+                <td>Python</td>
+                <td>Workday</td>
+                <td>ServSafe</td>
+            </tr>
+            <tr>
+                <td>Fusion</td>
+                <td>Articulate Rise 360</td>
+                <td>Jupyter Notebook</td>
+                <td>iCIMS</td>
+                <td>CAPM</td>
+            </tr>
+            <tr>
+                <td>Canvas</td>
+                <td>Articulate Storyline 360</td>
+                <td>R</td>
+                <td>UKG</td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+        <video controls width="400">
+            <source src="resumevid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+            <a href="../webcontent/Jones-Resume.pdf" class="resume-link">Download My Resume</a>
+        <?php
+         require_once("footer.php");
+         ?>
+    </body>
+</html>
+<!--
+This will close the code and complete the page
+-->
