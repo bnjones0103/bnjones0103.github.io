@@ -21,7 +21,7 @@
     </head>
     <body>
         <?php
-         require_once("header.php");
+         include 'header.php';
          ?>
         <h1>Contact Me</h1>
         <!--This is a sample heading for the beginning of content. This is where all content will lie.
@@ -58,7 +58,7 @@
 
 
         <?php
-         require_once("footer.php");
+         include 'footer.html';
          ?>
     </body>
 </html>

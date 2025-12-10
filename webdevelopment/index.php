@@ -26,7 +26,7 @@ session_start();
     <body>
         <!-- end of base -->
          <?php
-         require_once("header.php");
+         include 'header.php';
          ?>
         <!-- start of base -->
         <section class="hero">
@@ -73,7 +73,7 @@ session_start();
         </section>
         <!-- end of base -->
          <?php
-         require_once("footer.php");
+          include 'footer.html';
          ?>
     </body>
 </html>

@@ -21,7 +21,7 @@
     </head>
     <body>
         <?php
-         require_once("header.php");
+         include 'header.php';
          ?>
         <h1>Projects</h1>
         <section id="flyers">
@@ -99,7 +99,7 @@
             </p>
         </section>
         <?php
-         require_once("footer.php");
+         include 'footer.html';
          ?>
     </body>
 </html>

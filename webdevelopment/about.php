@@ -1,8 +1,3 @@
-<?php
-
-?>
-
-
 <!Doctype HTML>
 <html lang="en">
     <!--
@@ -25,7 +20,7 @@
     </head>
     <body>
         <?php
-         require_once("header.php");
+         include 'header.php';
          ?>
         <!-- Custom font used here -->
         <h1>About Me</h1>   
@@ -161,7 +156,7 @@
         
             <a href="../webcontent/Jones-Resume.pdf" class="resume-link">Download My Resume</a>
         <?php
-         require_once("footer.php");
+         include 'footer.html';
          ?>
     </body>
 </html>

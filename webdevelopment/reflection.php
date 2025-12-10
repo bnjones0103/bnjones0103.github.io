@@ -21,7 +21,7 @@
     </head>
     <body>
         <?php
-         require_once("header.php");
+         include 'header.php';
          ?>
         <h1>Reflection</h1>
         <!--This is a sample heading for the beginning of content. This is where all content will lie.
@@ -56,7 +56,7 @@
             </p>
         </div>
         <?php
-         require_once("footer.php");
+          include 'footer.html';
          ?>
     </body>
 </html>
